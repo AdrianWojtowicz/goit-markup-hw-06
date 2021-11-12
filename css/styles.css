@@ -542,6 +542,7 @@ nav {
     color: #fff;
     border-radius: 4px;
     padding-left: 16px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .newsletter-button {
@@ -738,4 +739,73 @@ button:hover, button:focus {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1), visibility 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.modal-formularz {
+    width: 448px;
+    margin: 12px 40px;
+}
+
+.text-area, .text-area2 {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    position: relative;
+    padding-left: 42px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-area2 {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+}
+
+.dane {
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.text-area2::placeholder {
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.icon-person, .icon-phone, .icon-email {
+    position: absolute;
+    left: 52px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-person {
+    top: 109px;
+}
+
+.icon-phone {
+    top: 182px;
+}
+
+.icon-email {
+    top: 254px;
+}
+
+.text-area:focus, .text-area2:focus, .newsletter-email:focus {
+    border-color: #2196F3;
 }
