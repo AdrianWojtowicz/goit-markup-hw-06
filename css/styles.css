@@ -860,7 +860,6 @@ button:hover, button:focus {
 .checkbox:checked + .oświadczenie-tekst::before {
     background-image: url(../images/icons.svg#icon-icon-check);
     border: none;
-    background-color: transparent;
 }
 
 .oświadczenie-podkreślenie {
