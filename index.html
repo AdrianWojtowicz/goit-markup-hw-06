@@ -355,37 +355,49 @@
             <div class="modal-title">Zostaw swoje dane w formularzu poniżej</div>
             <div class="modal-formularz">
                 <form>
-                    <label>
-                        <span class="dane">Imię</span>
-                            <input class="text-area" type="name" name="name"/>
+                    <label class="dane">Imię
+                        <div class="input">
                             <svg class="icon-person" width="18" height="18">
                                 <use href="./images/icons.svg#icon-person-black"></use>
                             </svg>
+                            <input class="text-area" type="name" name="name" />
+                        </div>
                     </label>
-                    <label>
-                        <span class="dane">Telefon</span>
-                        <input class="text-area" type="tel" name="tel"/>
-                        <svg class="icon-phone" width="18" height="18">
-                            <use href="./images/icons.svg#icon-phone-black"></use>
-                        </svg>
+                    <label class="dane">Telefon
+                        <div class="input">
+                            <svg class="icon-phone" width="18" height="18">
+                                <use href="./images/icons.svg#icon-phone-black"></use>
+                            </svg>
+                            <input class="text-area" type="name" name="name" />
+                        </div>
                     </label>
-                    <label>
-                        <span class="dane">Email</span>
-                        <input class="text-area" type="email" name="email"/>
-                        <svg class="icon-email" width="18" height="18">
-                            <use href="./images/icons.svg#icon-email-black"></use>
-                        </svg>
+                    <label class="dane">Email
+                        <div class="input">
+                            <svg class="icon-email" width="18" height="18">
+                                <use href="./images/icons.svg#icon-email-black"></use>
+                            </svg>
+                            <input class="text-area" type="name" name="name" />
+                        </div>
                     </label>
-                    <label>
-                        <span class="dane">Komentarz</span>
-                        <textarea class="text-area2" name="komentarz" placeholder="Wprowadź tekst"></textarea>
+                    <label class="dane">Komentarz
+                        <div class="input2">
+                            <textarea class="text-area2" type="text" name="komentarz" placeholder="Wprowadź tekst"></textarea>
+                        </div>
                     </label>
+                    
+
                 </form>
             </div>
             <div class="oświadczenie">
-                Oświadczam iż akceptuję <span class="regulamin-niebieski">Regulamin</span> i <span
-                    class="regulamin-niebieski">Politykę Prywatności.</span>
+                <form>
+                    <input class="checkbox visually-hidden" type="checkbox" name="oświadczenie" id="oświadczenie" />
+                    <label class="oświadczenie-tekst" for="oświadczenie">
+                        Oświadczam iż akceptuję <span class="oświadczenie-podkreślenie">Regulamin</span> 
+                        i <span class="oświadczenie-podkreślenie">Politykę Prywatności</span>.
+                    </label>
+                </form>
             </div>
+
             <div>
                 <button class="formularz-button" type="submit">Wyślij</button>
             </div>

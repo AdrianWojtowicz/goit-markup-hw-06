@@ -423,7 +423,7 @@ nav {
 .klient5:hover > .icon-klient5, 
 .klient6:hover > .icon-klient6,
 .klient1:focus > .icon-klient1, 
-.klient2:focus> .icon-klient2, 
+.klient2:focus > .icon-klient2, 
 .klient3:focus > .icon-klient3, 
 .klient4:focus > .icon-klient4, 
 .klient5:focus > .icon-klient5, 
@@ -540,9 +540,14 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
     color: #fff;
+    outline: none;
     border-radius: 4px;
     padding-left: 16px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.newsletter-email:focus {
+    border-color: #2196f3;
 }
 
 .newsletter-button {
@@ -757,83 +762,110 @@ button:hover, button:focus {
     padding: 0;
 }
 
-.text-area, .text-area2 {
-    width: 448px;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    margin-bottom: 10px;
-    border-radius: 4px;
-    position: relative;
-    padding-left: 42px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.text-area2 {
-    height: 120px;
-    padding: 12px 16px;
-    resize: none;
-    margin-bottom: 0;
-}
-
 .dane {
     font-size: 12px;
     line-height: 1.1;
     letter-spacing: 0.01em;
     color: #757575;
-    margin-bottom: 4px;
+    padding: 0;
 }
 
-.text-area2::placeholder {
-    font-size: 12px;
-    line-height: 1.1;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+.input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-top: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus-within,
+.input2:focus-within {
+    border-color: #2196f3;
+    color: #2196f3;
 }
 
 .icon-person, .icon-phone, .icon-email {
-    fill: #212121;
-    position: absolute;
-    left: 52px;
+    margin-left: 12px;
+    margin-right: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-person {
-    top: 104px;
+.input:focus-within > .icon-person,
+.input:focus-within > .icon-phone,
+.input:focus-within > .icon-email {
+    fill: #2196f3;
 }
 
-.icon-phone {
-    top: 172px;
+.text-area {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 0;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-email {
-    top: 240px;
+.input2 {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.text-area:focus, .text-area2:focus, .newsletter-email:focus {
-    border-color: #2196F3;
+.text-area2 {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 12px 16px;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .oświadczenie {
-    margin-top: 8px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.oświadczenie-tekst {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #757575;
-    text-justify: center;
+    position: relative;
 }
 
-.regulamin-niebieski {
-    color: #2196f3;
-    text-decoration: underline;
-}
-
-.oświadczenie::before {
-    display: block;
+.oświadczenie-tekst::before {
+    display: inline-block;
+    position: relative;
     content: "";
     width: 16px;
     height: 15px;
-    border: 1px solid #212121;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    top: 2px;
+    left: -3px;
+}
+
+.checkbox:checked + .oświadczenie-tekst::before {
+    background-image: url(./images/icons.svg#icon-icon-check);
+    border: none;
+    background-color: transparent;
+}
+
+.oświadczenie-podkreślenie {
+    text-decoration: underline;
+    color: #2196F3;
 }
 
 .formularz-button {
@@ -844,4 +876,15 @@ button:hover, button:focus {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
 }
