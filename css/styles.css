@@ -704,7 +704,7 @@ button:hover, button:focus {
     width: 528px;
     height: 581px;
     margin: auto;
-    background: #FFFFFF;
+    background: #FFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     position: relative;
@@ -744,7 +744,7 @@ button:hover, button:focus {
 .modal-title {
     font-weight: bold;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.03em;
     justify-content: center;
@@ -754,13 +754,13 @@ button:hover, button:focus {
 .modal-formularz {
     width: 448px;
     margin: 12px 40px;
+    padding: 0;
 }
 
 .text-area, .text-area2 {
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    margin-top: 4px;
     margin-bottom: 10px;
     border-radius: 4px;
     position: relative;
@@ -772,6 +772,7 @@ button:hover, button:focus {
     height: 120px;
     padding: 12px 16px;
     resize: none;
+    margin-bottom: 0;
 }
 
 .dane {
@@ -779,6 +780,7 @@ button:hover, button:focus {
     line-height: 1.1;
     letter-spacing: 0.01em;
     color: #757575;
+    margin-bottom: 4px;
 }
 
 .text-area2::placeholder {
@@ -789,23 +791,57 @@ button:hover, button:focus {
 }
 
 .icon-person, .icon-phone, .icon-email {
+    fill: #212121;
     position: absolute;
     left: 52px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-person {
-    top: 109px;
+    top: 104px;
 }
 
 .icon-phone {
-    top: 182px;
+    top: 172px;
 }
 
 .icon-email {
-    top: 254px;
+    top: 240px;
 }
 
 .text-area:focus, .text-area2:focus, .newsletter-email:focus {
     border-color: #2196F3;
+}
+
+
+.oświadczenie {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-justify: center;
+}
+
+.regulamin-niebieski {
+    color: #2196f3;
+    text-decoration: underline;
+}
+
+.oświadczenie::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 1px solid #212121;
+}
+
+.formularz-button {
+    width: 200px;
+    height: 50px;
+    margin: 30px 164px;
+    color: #fff;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
