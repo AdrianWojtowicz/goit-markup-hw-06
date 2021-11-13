@@ -858,7 +858,7 @@ button:hover, button:focus {
 }
 
 .checkbox:checked + .oświadczenie-tekst::before {
-    background-image: url(./images/icons.svg#icon-icon-check);
+    background-image: url(../images/icons.svg#icon-icon-check);
     border: none;
     background-color: transparent;
 }
