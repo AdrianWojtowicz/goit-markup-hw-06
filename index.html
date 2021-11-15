@@ -333,14 +333,15 @@
                 </div>
                 <div class="newsletter">
                     zapisz się do newslettera
-                    <div class="newsletter2">
-                        <form>
-                            <label>
-                                <input class="newsletter-email" type="email" name="email-newsletter" placeholder="E-mail" />
-                            </label>
-                        </form>
-                        <button class="newsletter-button" type="submit">Zapisz się <svg class="icon-send" width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg></button>
-                    </div>
+                    <form class="newsletter2">
+                        <label>
+                            <input class="newsletter-email" type="email" name="email-newsletter" placeholder="E-mail" />
+                        </label>
+                         <button class="newsletter-button" type="submit">Zapisz się
+                             <svg class="icon-send" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                             </svg></button>
+                    </form>
                 </div>
             </div>    
         </div>    
@@ -384,22 +385,15 @@
                             <textarea class="text-area2" type="text" name="komentarz" placeholder="Wprowadź tekst"></textarea>
                         </div>
                     </label>
-                    
-
+                    <div class="oświadczenie">
+                        <input class="checkbox visually-hidden" type="checkbox" name="oświadczenie" id="oświadczenie" />
+                        <label class="oświadczenie-tekst" for="oświadczenie">
+                            Oświadczam iż akceptuję <span class="oświadczenie-podkreślenie">Regulamin</span>
+                            i <span class="oświadczenie-podkreślenie">Politykę Prywatności</span>.
+                        </label>
+                    </div>
+                    <button class="formularz-button" type="submit">Wyślij</button>
                 </form>
-            </div>
-            <div class="oświadczenie">
-                <form>
-                    <input class="checkbox visually-hidden" type="checkbox" name="oświadczenie" id="oświadczenie" />
-                    <label class="oświadczenie-tekst" for="oświadczenie">
-                        Oświadczam iż akceptuję <span class="oświadczenie-podkreślenie">Regulamin</span> 
-                        i <span class="oświadczenie-podkreślenie">Politykę Prywatności</span>.
-                    </label>
-                </form>
-            </div>
-
-            <div>
-                <button class="formularz-button" type="submit">Wyślij</button>
             </div>
         </div>
     </div>
