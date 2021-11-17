@@ -850,7 +850,7 @@ button:hover, button:focus {
     position: relative;
     content: "";
     width: 16px;
-    height: 15px;
+    height: 16px;
     border: 2px solid #212121;
     border-radius: 2px;
     top: 2px;
@@ -858,8 +858,10 @@ button:hover, button:focus {
 }
 
 .checkbox:checked + .oświadczenie-tekst::before {
-    background-image: url(../images/icons.svg#icon-icon-check);
     border: none;
+    background-image: url(/images/icon-check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .oświadczenie-podkreślenie {
