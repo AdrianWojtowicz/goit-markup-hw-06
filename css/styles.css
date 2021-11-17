@@ -859,7 +859,7 @@ button:hover, button:focus {
 
 .checkbox:checked + .oświadczenie-tekst::before {
     border: none;
-    background-image: url("../images/icon-check.svg");
+    background-image: url(images/icon-check.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
